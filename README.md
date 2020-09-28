@@ -41,15 +41,13 @@
 
 ## Top 3 HMW questions (This order is not a ranking.)
 - First Question) 1. HMW make people not care about the number of people they need?
-  - Ahn: Our platform for ordering the delivery food(a.k.a BFFT) highly requires a voluntary crowd to achieve reasonable delivery services in terms of time to get food and cost. How we motivate them to participate in this platform is a very important HMW question.
+  - Reason: 
   
 - Second Question) 6. HMW make the cost for delivery food reduce?
-  - Ahn: People who order the delivery food want to get a cheaper order price on and on. It is a hugely crucial question how the BFFT platform will give them satisfactory options regarding price of the food.
-  - Roh: The biggest problem why people avoid to deliver food alone is because of the high cost of some menus that has a bigger size than for one person. Also as delivery takes some delivery fee for each order, the frequency and amount we have to pay for each delivery increases. These factors seem to be the major factors that make people afraid of ordering delivery alone but go out to eat.
+  - Reason: The biggest problem why people avoid to enjoy delivery food alone is due to the high cost of some menus that has a bigger size than for one person. Also as delivery takes some delivery fee for each order, the frequency and amount we have to pay for each delivery increases. These factors seem to be the major factors that make people afraid of ordering delivery alone but go out to eat.
   
 - Third Question) 12. HMW satisfy people’s various needs for food?
-  - Ahn: Most people would like to eat a varied menu in one meal. However, it is difficult to get this experience due to individual economic constraints and leftovers. It is an important HMW question how we offer people a variety of foods for the same price.
-  - Roh: Many people have difficulties on deciding only a limited amount of food for each delivery because of the diverse menu. So we thought that if we could solve the diverse needs of each person, it will be a solution that can satisfy many users.
+  - Reason: Most people would like to eat a varied menu in one meal. However, economic constraints and leftovers make them difficult to enjoy this experience. In other words, they have difficulties on deciding only a limited amount of food for each delivery because of the diverse menu. So we thought that if we could solve the diverse needs of each person, it will be a solution that can satisfy many users.
   
 ## Solution ideas for your HMW questions
 - First Question) 1. HMW make people not care about the number of people they need?
