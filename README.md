@@ -88,4 +88,3 @@
 -  Due to the decrease in both the number of people and contacts between them within KAIST in the COVID-19 Pandemic, ordering delivery food for students who are currently living in the KAIST dormitory is difficult. From the contents from ideation, we plan to implement a platform that will allow people to gather and eat together with ordering by restaurants. Users can not only gather people easily to order together with, but also obtain an economical advantage by being recommended cost-effective menus in our platform. As the order is based on the restaurants, it is expected that the menu will need to be exchanged, so we are thinking about additional features (leaving comments or showing preferences).
 
 
-
