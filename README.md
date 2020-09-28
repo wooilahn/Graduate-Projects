@@ -85,7 +85,7 @@
   
 
 ## Conclusion
--  Due to the shortage of personnel in the COVID-19 Pandemics, ordering delivery food within KAIST is difficult. From the contents from ideation, we plan to implement a platform that will allow people to gather and eat together according to the restaurants. Users can not only gather people easily to order together with, but also obtain an economical advantage by being recommended cost-effective menus in our platform. As the order is based on the restaurants, it is expected that the menu will need to be exchanged, so we are thinking about additional features (leaving comments or showing preferences).
+-  Due to the shortage of personnel in the COVID-19 Pandemics, ordering delivery food for students who is currently living in KAIST domitory is difficult. From the contents from ideation, we plan to implement a platform that will allow people to gather and eat together according to the restaurants. Users can not only gather people easily to order together with, but also obtain an economical advantage by being recommended cost-effective menus in our platform. As the order is based on the restaurants, it is expected that the menu will need to be exchanged, so we are thinking about additional features (leaving comments or showing preferences).
 
 
 
