@@ -80,7 +80,7 @@
   - Reason: As it is mentioned in the motivation and the reason why we picked this HMW, what a person prefers and owes differs very much. Many delivery shops usually have a diverse menu which has sets or combinations of two menus in one order. We thought that not limiting the order by the menu but by the restaurant could be a better solution that can gather people faster and satisfy more people with one order and several different menus.
   
 - Second Solution) Recommend and order cost-effective menus with more people. (S2 of Q2)
-  - Reason: The more delivery food you order, the more cost-effective menus will be offered by restaurants. However, there is a tendency to remain too much leftovers if ordering the cost-effective menu alone.
+  - Reason: The more delivery food you order, the more cost-effective menus will be offered by restaurants. However, there is a tendency to remain too much leftovers if ordering the cost-effective menu alone. Ordering cost-effective menus with gathered people can help reduce the cost of the delivery food.
   
 - Third Solution) Gather people who want to eat together easily after deciding a menu. (S1 of Q1)
   - Reason: The biggest reason that we thought that this is in the top 3 ideas was that this is an important idea for gathering and having food together. As delivery food does not have separate plates, it is hard to divide with others which will require people to gather and eat together. However, deciding a menu seems to be crashing with the first solution which decides by restaurant rather than menu. So, we plan to combine this idea with the first solution.
