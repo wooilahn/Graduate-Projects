@@ -51,7 +51,7 @@
   - Ahn: Most people would like to eat a varied menu in one meal. However, it is difficult to get this experience due to individual economic constraints and leftovers. It is an important HMW question how we offer people a variety of foods for the same price.
   - Roh: Many people have difficulties on deciding only a limited amount of food for each delivery because of the diverse menu. So we thought that if we could solve the diverse needs of each person, it will be a solution that can satisfy many users.
   
-## Solution ideas for your HMW questions (at least 5x3 HMWs)
+## Solution ideas for your HMW questions
 - First Question) 1. HMW make people not care about the number of people they need?
   - Solution 1) Gather people who want to eat together easily after deciding a menu. 
   - Solution 2) Just order a menu for 1 person. Make the restaurant divide the menu.
