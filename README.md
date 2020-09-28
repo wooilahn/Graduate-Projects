@@ -1,10 +1,10 @@
 # CS473 Milestone 1: Ideation
 
 ## Team members
-- KyungGeun Roh
-- Mingyu Yang
-- Seungho Choi
-- Wooil Ahn
+- 20150263 KyungGeun Roh
+- 20150455 Mingyu Yang
+- 20160662 Seungho Choi
+- 20203351 Wooil Ahn
 
 ## Final Team Name
 - BFFT: Birds of a Feather Flock Together
@@ -41,7 +41,7 @@
 
 ## Top 3 HMW questions (This order is not a ranking.)
 - First Question) 1. HMW make people not care about the number of people they need?
-  - Reason: 
+  - Reason: The most general problem that people face when they order delivery food is the lack of people to order together. This is the main reason why we picked this HMW question. As mentioned in the problem background, this question is related to the lack of people to order together with the student who lives alone in the KAIST dormitory.
   
 - Second Question) 6. HMW make the cost for delivery food reduce?
   - Reason: The biggest problem why people avoid to enjoy delivery food alone is due to the high cost of some menus that has a bigger size than for one person. Also as delivery takes some delivery fee for each order, the frequency and amount we have to pay for each delivery increases. These factors seem to be the major factors that make people afraid of ordering delivery alone but go out to eat.
