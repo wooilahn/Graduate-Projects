@@ -7,7 +7,7 @@
 - Wooil Ahn
 
 ## Final Team Name
-- BFFT: Birds of a feather flock together
+- BFFT: Birds of a Feather Flock Together
 
 ## Problem Statement
 - There are various challenges with ordering delivery food for students who are currently living in the KAIST dormitory, due to the decreased number of people on the KAIST campus.
