@@ -26,7 +26,7 @@
 ## HMW questions (at least 10)
 1.  HMW make people not care about the number of people they need?
 2.  HMW make people enjoy ordering delivery food itself? 
-3.  HMW help people make friends with others to make a delivery friend?
+3.  HMW help people make friends with others to enjoy a meal together?
 4.  HMW help people not to feel hard to deliver food by themselves?
 5.  HMW let people deliver what they want with no bother? 
 6.  HMW make the cost for delivery food reduce?
