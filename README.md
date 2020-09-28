@@ -58,7 +58,7 @@
   - Solution 3) Make an online matching site that matches anyone near who prefers the similar menu.
   - Solution 4) Divide the food after ordering it with other people who need it.
   - Solution 5) Install storage for leftovers so they don’t have to care.
-  - Solution 6) Allow people publicly show their status(hungry, fall,  and preference for the meal.
+  - Solution 6) Allow people publicly show their status(e.g., hungry, full) and preference for the meal.
   
 - Second Question) 6. HMW make the cost for delivery food reduce?
   - Solution 1) If pick-up service is available, volunteers in the group bring food from the restaurant.
