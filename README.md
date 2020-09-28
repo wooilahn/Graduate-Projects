@@ -62,7 +62,7 @@
   - Solution 1) If pick-up service is available, volunteers in the group bring food from the restaurant.
   - Solution 2) Recommend and order cost-effective menus with more people. (Selected as the Top 3 solution ideas) 
   - Solution 3) Collect the coupons of members and use them for discounts.  
-  - Solution 4) Minimize the delivery stage (Recommendations for ordering by phone).
+  - Solution 4) Minimize the delivery stage by means such as phone-ordering.
   - Solution 5) Group deliveries of the same menu to decrease delivery costs.
   
 - Third Question) 12. HMW satisfy people’s various needs for food.
