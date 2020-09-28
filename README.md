@@ -15,6 +15,8 @@
 ## Problem background
 -  최근 코로나19의 영향으로 배달의 수요가 급증했습니다. 한 기사에 따르면, 사회적 거리두기의 강화로 인해 배달 음식 주문량이 27%가 증가하였습니다 [[1]]. 이로 인해 배달 음식 주문 수에 비해 배달원들이 부족해지는 상황이 발생하였고, 그들의 업무량이 과도하게 증가했습니다.[[2]] KAIST 교내에서는 기숙사에 거주하는 학생 수가 줄어들었고, 학교에 남아있는 대부분의 학생들이 독방에 거주하고 있습니다.[[3]] 실제로 기존에는 룸메이트와 함께 음식을 주문하던 학생들이 음식 주문에 어려움을 겪고 있는 경우가 많다고 합니다. 현재 KAIST 교내에 있는 학생들이 배달 음식을 함께 먹을 사람을 구하기 어려우며, 혼자 배달음식을 주문하기에는 가격과 양이 부담되기 때문에 학생들이 쉽게 배달 주문을 하기 어려운 상황입니다. 또한, 늘어가는 배달에 대한 팁 또한 소비자의 부담을 증가시키고 있습니다[[4]].
 
+ Recently, demand on delivery has increased due to COVID-19 pandemic. According to [[1]], the number or ordering delivery food has increased 27 percent due to reinforcing social distancing. This led to a shortage of deliverymen compared to the number of delivery food orders, and their workload increased excessively [[2]]. Students in campus has decreased and most of them are staying in solitary type [[3]]. In real, students who were enjoying delivery food with their ex-roommate are having problem with ordering food. Currently, it is difficult for students in KAIST to find a person to share delivery food, and it is difficult for students to easily order delivery food because it is too expensive to order food alone. Also, they are also burdened with increasing delivery tips [[4]].
+
 [1]: http://biz.newdaily.co.kr/site/data/html/2020/09/03/2020090300136.html/
 [2]: http://www.knnews.co.kr/news/articleView.php?idxno=1333218
 [3]: http://times.kaist.ac.kr/news/articleView.html?idxno=10294
@@ -82,8 +84,5 @@
   
 - Third Solution) Gather people who want to eat together easily after deciding a menu. (S1 of Q1)
   - Reason: We choose this as the top 3 solution ideas since this is an important idea for gathering and having food together. As delivery food does not have separate plates, it is hard to divide with others which will require people to gather and eat together. However, deciding a menu seems to be crashing with the first solution which decides by restaurant rather than menu. So, we plan to combine this idea with the first solution.
-
-## Storyboards
-- First Storyboard: blah blah
-- Second Storyboard: blah blah
-- Third Storyboard: blah blah
+  
+ 
