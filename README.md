@@ -24,18 +24,18 @@
 - As every person has their own food preference and a range of food is diverse, it is hard to predict what they want to eat. Also the problem of ordering delivery food is mostly based on the missing people due to the COVID-19 pandemic. The easiest solution is just to gather people. To group people for ordering delivery food, we will need communication rather than an expert or a machine. Social computing can help people solve this problem much faster by gathering people online. Moreover, people who gather together can share their opinions to satisfy everybody.
 
 ## HMW questions (at least 10)
-1.  HMW make people not care about the number of people they need?
+1.  HMW make people not care about the number of people they need? (Selected as the Top 3 HMW questions) 
 2.  HMW make people enjoy ordering delivery food itself? 
 3.  HMW help people make friends with others to enjoy a meal together?
 4.  HMW help people not to feel hard to deliver food by themselves?
 5.  HMW let people deliver what they want with no bother? 
-6.  HMW make the cost for delivery food reduce?
+6.  HMW make the cost for delivery food reduce? (Selected as the Top 3 HMW questions) 
 7.  HMW prevent too many people gathering for one delivery?
 8.  HMW prevent leftovers after a meal?
 9.  HMW block some people who have bad manners for delivery?
 10. HMW make gathering people faster than usual?
 11. HMW make delivery process simpler than usual?
-12. HMW satisfy people’s various needs for food?
+12. HMW satisfy people’s various needs for food? (Selected as the Top 3 HMW questions)
 13. HMW make people enjoy various foods in one meal?
 14. HMW diversify the menu in a single delivery?
 
@@ -50,8 +50,8 @@
   - Reason: Most people would like to eat a varied menu in one meal. However, economic constraints and leftovers make them difficult to enjoy this experience. In other words, they have difficulties on deciding only a limited amount of food for each delivery because of the diverse menu. So we thought that if we could solve the diverse needs of each person, it will be a solution that can satisfy many users.
   
 ## Solution ideas for your HMW questions
-- First Question) 1. HMW make people not care about the number of people they need?
-  - Solution 1) Gather people who want to eat together easily after deciding a menu. 
+- First Question) 1. HMW make people not care about the number of people they need? 
+  - Solution 1) Gather people who want to eat together easily after deciding a menu.(Selected as the Top 3 solution ideas) 
   - Solution 2) Just order a menu for 1 person. Make the restaurant divide the menu.
   - Solution 3) Make an online matching site that matches anyone near who prefers the similar menu.
   - Solution 4) Divide the food after ordering it with other people who need it.
@@ -60,18 +60,18 @@
   
 - Second Question) 6. HMW make the cost for delivery food reduce?
   - Solution 1) If pick-up service is available, volunteers in the group bring food from the restaurant.
-  - Solution 2) Recommend and order cost-effective menus with more people.
+  - Solution 2) Recommend and order cost-effective menus with more people.(Selected as the Top 3 solution ideas) 
   - Solution 3) Collect the coupons of members and use them for discounts.  
   - Solution 4) Minimize the delivery stage.
   - Solution 5) Group deliveries of the same menu to decrease delivery costs.
   
 - Third Question) 12. HMW satisfy people’s various needs for food.
   - Solution 1) Gather people depending on their preferences.
-  - Solution 2) Recommend people who want to share their food with others (or trade also).
+  - Solution 2) Recommend people who want to either share or trade their food with others.
   - Solution 3) Share leftovers to others. (Only eatable things)
   - Solution 4) Make restaurants share their menu to provide various food.
-  - Solution 5) Register more restaurants providing large variation on food (like 피자나라 치킨공주).
-  - Solution 6) Gather people by restaurant, not by menu.
+  - Solution 5) Register more restaurants providing large variation on food like 피자나라 치킨공주.
+  - Solution 6) Gather people by restaurant, not by menu. (Selected as the Top 3 solution ideas) 
   
 ## Top 3 solution ideas (This order is not a ranking.)
 - First Solution) Gather people by restaurant, not by menu. (S6 of Q3)
