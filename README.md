@@ -43,7 +43,7 @@
 - First Question) 1. HMW make people not care about the number of people they need?
   - Ahn: Our platform for ordering the delivery food(a.k.a BFFT) highly requires a voluntary crowd to achieve reasonable delivery services in terms of time to get food and cost. How we motivate them to participate in this platform is a very important HMW question.
   
-- Second Question) 6. HMW make the delivery fee reduce?
+- Second Question) 6. HMW make the cost for delivery food reduce?
   - Ahn: People who order the delivery food want to get a cheaper order price on and on. It is a hugely crucial question how the BFFT platform will give them satisfactory options regarding price of the food.
   - Roh: The biggest problem why people avoid to deliver food alone is because of the high cost of some menus that has a bigger size than for one person. Also as delivery takes some delivery fee for each order, the frequency and amount we have to pay for each delivery increases. These factors seem to be the major factors that make people afraid of ordering delivery alone but go out to eat.
   
@@ -58,8 +58,9 @@
   - Solution 3) Make an online matching site that matches anyone near who prefers the similar menu.
   - Solution 4) Divide the food after ordering it with other people who need it.
   - Solution 5) Install storage for leftovers so they don’t have to care.
+  - Solution 6) Allow people publicly show their status and preference for the meal, so that a recommendation satisfying them is provided.
   
-- Second Question) 6. HMW make the delivery fee reduce?
+- Second Question) 6. HMW make the cost for delivery food reduce?
   - Solution 1) If pick-up service is available, volunteers in the group bring food from the restaurant.
   - Solution 2) Recommend and order cost-effective menus with more people.
   - Solution 3) Collect the coupons of members and use them for discounts.  
