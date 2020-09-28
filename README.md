@@ -1,4 +1,4 @@
-# CS473(Introduction to Social Computing) Milestone 1: Ideation
+# CS473 Milestone 1: Ideation
 
 ## Team members
 - KyungGeun Roh
