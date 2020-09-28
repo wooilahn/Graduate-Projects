@@ -21,7 +21,7 @@
 [4]: https://www.jjan.kr/news/articleView.html?idxno=2023875
 
 ## Motivation (Why social computing?)
-- As every person has their own food preference and a range of food is diverse, it is hard to predict what they want. Also the problem of ordering delivery food is mostly based on the missing people due to the COVID-19 pandemic. The easiest solution is just to gather people. To group people for ordering delivery food, we will need communication rather than an expert or a machine. Social computing can help people solve this problem much faster by gathering people online. Moreover, people who gather together can share their opinions to satisfy everybody.
+- As every person has their own food preference and a range of food is diverse, it is hard to predict what they want to eat. Also the problem of ordering delivery food is mostly based on the missing people due to the COVID-19 pandemic. The easiest solution is just to gather people. To group people for ordering delivery food, we will need communication rather than an expert or a machine. Social computing can help people solve this problem much faster by gathering people online. Moreover, people who gather together can share their opinions to satisfy everybody.
 
 ## HMW questions (at least 10)
 1.  HMW make people not care about the number of people they need?
