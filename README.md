@@ -81,7 +81,7 @@
   - Reason: The more delivery food you order, the more cost-effective menus will be offered by restaurants. However, there is a tendency to remain too much leftovers if ordering the cost-effective menu alone. Ordering cost-effective menus with gathered people can help reduce the cost of the delivery food.
   
 - Third Solution) Gather people who want to eat together easily after deciding a menu. (S1 of Q1)
-  - Reason: The biggest reason that we choose this as the top 3 solution ideas was that this is an important idea for gathering and having food together. As delivery food does not have separate plates, it is hard to divide with others which will require people to gather and eat together. However, deciding a menu seems to be crashing with the first solution which decides by restaurant rather than menu. So, we plan to combine this idea with the first solution.
+  - Reason: We choose this as the top 3 solution ideas since this is an important idea for gathering and having food together. As delivery food does not have separate plates, it is hard to divide with others which will require people to gather and eat together. However, deciding a menu seems to be crashing with the first solution which decides by restaurant rather than menu. So, we plan to combine this idea with the first solution.
 
 ## Storyboards
 - First Storyboard: blah blah
