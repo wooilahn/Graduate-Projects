@@ -51,7 +51,7 @@
   
 ## Solution ideas for your HMW questions
 - First Question) 1. HMW make people not care about the number of people they need? 
-  - Solution 1) Gather people who want to eat together easily after deciding a menu.(Selected as the Top 3 solution ideas) 
+  - Solution 1) Gather people who want to eat together easily after deciding a menu. (Selected as the Top 3 solution ideas) 
   - Solution 2) Just order a menu for 1 person. Make the restaurant divide the menu.
   - Solution 3) Make an online matching site that matches anyone near who prefers the similar menu.
   - Solution 4) Divide the food after ordering it with other people who need it.
@@ -60,7 +60,7 @@
   
 - Second Question) 6. HMW make the cost for delivery food reduce?
   - Solution 1) If pick-up service is available, volunteers in the group bring food from the restaurant.
-  - Solution 2) Recommend and order cost-effective menus with more people.(Selected as the Top 3 solution ideas) 
+  - Solution 2) Recommend and order cost-effective menus with more people. (Selected as the Top 3 solution ideas) 
   - Solution 3) Collect the coupons of members and use them for discounts.  
   - Solution 4) Minimize the delivery stage.
   - Solution 5) Group deliveries of the same menu to decrease delivery costs.
