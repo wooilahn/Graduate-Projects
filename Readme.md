@@ -39,7 +39,16 @@
 
 
 - Representative screenshots:  
-    Contents
+1. Posting  
+![posting_representative](./images/posting_representative.png)
+
+
+2. Chatting
+![chatting_representative](./images/chatting_representative.png)
+
+
+3. Reviewing  
+![reviewing_representative](./images/reviewing_representative.png)
 
 
 - Instructions  
