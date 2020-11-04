@@ -39,7 +39,6 @@ We mainly listed the tasks that will appear in our platform. (1) First, we will 
      
      
 - Representative screenshots:  
-
 1. Posting List page
     In this page, people can see the currently active postling list for finding others to enjoy delivery food together.
 ![postinglist_representative](./images/postinglist_representative.png)
