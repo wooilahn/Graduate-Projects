@@ -39,22 +39,22 @@ We mainly listed the tasks that will appear in our platform. (1) First, we will 
      
      
 - Representative screenshots:  
-    1. Posting List page
+    1. Posting List page  
     In this page, people can see the currently active postling list for finding others to enjoy delivery food together.
 ![postinglist_representative](./images/postinglist_representative.png)
 
 
-    2. Add Posting page
+    2. Add Posting page  
     In this page, the users can add postings with setting the desired restaurant and group size.
 ![addposting_representative](./images/addposting_representative.png)
 
 
-    3. Chatting page
+    3. Chatting page  
     In this page, the users in the group can talk to each other.
 ![chatting_representative](./images/chatting_representative.png)
 
 
-    4. Reviewing page
+    4. Reviewing page  
     In this page, the users can rate and review the people who have ordered and enjoyed the delivery food together.
 ![reviewing_representative](./images/reviewing_representative.png)  
 
