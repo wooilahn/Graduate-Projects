@@ -34,14 +34,10 @@ We mainly listed the tasks that will appear in our platform. (1) First, we will 
 - As InVision can easily create a prototype by images, we thought that it would be more pretty and clean to use photoshop to create an image and use the images to make the prototype. To make the images, we first designed how the pages should work and how the application should flow. So we used a feature of InVision, called ‘freehand’, to make a simple drawing of the design we thought to develop. After that, we made images using adobe photoshop to make the images that will be used in the prototype. However, as making images by photoshop could take a lot of effort, we divided the slides into three parts and distributed the work. This made the design quite unbalanced which became a problem of the prototype. Also, it was quite hard to add some functions in an image, so we had to add several images that could show the progress of the application. These were the problems we had using InVision.
 
 
-- We decided to make another design of a prototype which will be in this link. It is a clean design that was made by Powerpoint which is quite easy to balance every slide so that we could concentrate on the design more than any other things. We used both designs to check which design will be better in the survey by the testers.
-
-
 - Not to implement?  
-     Considering our prototype, we thought that we don’t need any special algorithms to make evaluations. Only rating will be evaluated by others reviews that will be just an evaluation of the mean of all reviews from others. So we thought that we won’t need any manual algorithm. Also the prototype only shows how the platform works and what kind of features we will have. So, we just only had some examples of fake information however didn’t need any other intentional things to implement into our design.
-
-
-
+     Considering our prototype, we thought that we don’t need any special algorithms to make evaluations. Only rating will be evaluated by others reviews that will be just an evaluation of the mean of all reviews from others. So we thought that we won’t need any manual algorithm. Also the prototype only shows how the platform works and what kind of features we will have. So, we just only had some examples of fake information however didn’t need any other intentional things to implement into our design.  
+     
+     
 - Representative screenshots:  
 
 1. Posting List page
@@ -61,7 +57,10 @@ We mainly listed the tasks that will appear in our platform. (1) First, we will 
 
 4. Reviewing page
     In this page, the users can rate and review the people who have ordered and enjoyed the delivery food together.
-![reviewing_representative](./images/reviewing_representative.png)
+![reviewing_representative](./images/reviewing_representative.png)  
+
+
+- We decided to make another design of a prototype which will be in this link. It is a clean design that was made by Powerpoint which is quite easy to balance every slide so that we could concentrate on the design more than any other things. We used both designs to check which design will be better in the survey by the testers.
 
 
 - Instructions  
