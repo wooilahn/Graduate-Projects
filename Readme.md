@@ -90,7 +90,7 @@ The participants are 25 university students in 20s (P1, P2, ... , P25). Our team
 10. The lack of detailed information on the restaurant might cause the order failure(meaning unsavory food). (P12, P25) [MEDIUM]    
     Solution) Ask a review of restaurants along with an evaluation function for the meal-mates, and provide this information for the users.
       
-11. It is too difficult to find the trolls with quantitative rating scores only (P13) [MEDIUM]    
+11. It is too difficult to find trolls with quantitative rating scores only (P13) [MEDIUM]    
     Solution) When evaluating the meal-mates, write down a simple reason so that qualitative evaluation can be evaluated as well.  
       
 12. It's hard to find the postings for the menu we want. (P14, P16) [MEDIUM]    
