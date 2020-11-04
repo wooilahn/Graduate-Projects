@@ -72,52 +72,52 @@ We mainly listed the tasks that will appear in our platform. (1) First, we will 
 
 The Participants are 25 university students in 20s (P1, P2, ... , P25). Our team informed these participants that this prototype is about a web application that brings people together to share delivery food within KAIST.
 
-1. There is a lack of information about the people we eat together, which makes users feel strange and unreliable. (P1, P21, P24) [HIGH]  
+1. There is a lack of information about the people we eat together, which makes users feel strange and unreliable. (P1, P21, P24) [HIGH]    
     Solution) Ask the questions so that detailed information can be obtained when signing up as a member. (These information will be opened to every member who will be matched with that user)
     
     
-2. Detailed information (location, etc.) on restaurants is not provided, so it is uncertain to estimate delivery time or whether the order is available or not. (P2, P3)[MEDIUM] 
+2. Detailed information (location, etc.) on restaurants is not provided, so it is uncertain to estimate delivery time or whether the order is available or not. (P2, P3)[MEDIUM]   
     Solution) Provide which restaurants are available for delivery within the app. (Expected delivery time is not possible to estimate as it changes due to the situation, and the restaurant operation time will be provided for order availability.)
     
     
-3. The preferred time is not provided in advance, so it is likely to take a long time due to an increase in what needs to be discussed. (P4) [MEDIUM] 
+3. The preferred time is not provided in advance, so it is likely to take a long time due to an increase in what needs to be discussed. (P4) [MEDIUM]   
     Solution) When posting, write down the time that the author prefers in advance to prevent conflicts on opinion.
     
 
-4. It's too much pressure to order food with strangers. (P5, P19) [MEDIUM]
+4. It's too much pressure to order food with strangers. (P5, P19) [MEDIUM]  
     Solution) Close psychological distance by providing some information about users in advance. Also, you can increase friendliness by using features such as adding friends which will be mentioned below.
 
-5. If you don't know where to get the delivery in advance, you may have problems such as time spent on moving to the place. (P6, P10, P23) [LOW]
+5. If you don't know where to get the delivery in advance, you may have problems such as time spent on moving to the place. (P6, P10, P23) [LOW]  
     Solution) When posting, have them fill out where they are going to receive delivery in advance.
 
 
-6. There may be people who use anonymity to troll on bad purpose. (P7) [HIGH] 
+6. There may be people who use anonymity to troll on bad purpose. (P7) [HIGH]   
     Solution) Since it will be operated within KAIST, real-name system can be used to prevent trolling or malicious behavior.
     
     
-7. A system will be needed to alert people because they will often miss the posting about the menu they want. (P8, P20) [LOW]
+7. A system will be needed to alert people because they will often miss the posting about the menu they want. (P8, P20) [LOW]  
     Solution) Set up a restaurant or keyword that you want and make a system that notifies you when a post or chat is posted.
 
 
-8. When paying for delivery, there is no function to do 1/n in the app in advance. (P9, P15, P22) [LOW]
+8. When paying for delivery, there is no function to do 1/n in the app in advance. (P9, P15, P22) [LOW]  
     Solution) Create a system that the person who are in charge of paying should press the button ‘finished spliting bill’ for ordering.
 
 
-9. Users who had trouble in the past may be matched. It would be better to provide a blocking feature. (P11, P23) [HIGH]
+9. Users who had trouble in the past may be matched. It would be better to provide a blocking feature. (P11, P23) [HIGH]  
     Solution) Apart from report/rating, make sure that the room which the user is in is not shown to the person who is blocked from the user.  
 
 
-10. The lack of detailed information on the restaurant might cause the order failure(meaning unsavory food). (P12, P25) [MEDIUM]
+10. The lack of detailed information on the restaurant might cause the order failure(meaning unsavory food). (P12, P25) [MEDIUM]  
     Solution) Provides a review of restaurants along with an evaluation function for mealmate.
     
     
-11. It is too difficult to cover non-manner users with quantitative rating scores only (P13) [MEDIUM]
+11. It is too difficult to cover non-manner users with quantitative rating scores only (P13) [MEDIUM]  
     Solution) When evaluating a mealmate, write down a simple reason so that qualitative evaluation can be carried out as well.
     
     
-12. It's hard to find postings for the menu you want. (P.14 P16) [MEDIUM]
+12. It's hard to find postings for the menu you want. (P.14 P16) [MEDIUM]  
     Solution) Add a function to filter posts by food or by food classification (Korean, Western, Chinese).
     
     
-13. It is hard to meet mealmates who became close by ordering and chatting together. (P17, P18) [MEDIUM] 
+13. It is hard to meet mealmates who became close by ordering and chatting together. (P17, P18) [MEDIUM]   
     Solution) Add ‘add friend’ feature in this system.  
