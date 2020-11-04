@@ -9,7 +9,7 @@
 
 
 ## Problem Statement
--  Students who are living in the KAIST dormitory near the KAIST currently have difficulty ordering delivery food, due to a lack of friends to order food together resulting in increased delivery cost and leftovers during COVID-19 pandemic. As the number of students living in the dormitory or near KAIST reduced due to the COVID issue, it became hard to gather people to deliver food together. However, as the delivery fee is quite expensive with a large amount of food for a single person, it became hard to deliver food. So, we are tackling the problem that it became hard to deliver food in KAIST with the corona pandemic. While solving this main problem with the corona pandemic, we are trying to solve some sub-problems like making people feel like they are enjoying their meals with others, even if they eat alone and how to find the trolls out of our system.
+-  **Students who are living in the KAIST dormitory near the KAIST currently have difficulty ordering delivery food, due to a lack of friends to order food together resulting in increased delivery cost and leftovers during COVID-19 pandemic.** As the number of students living in the dormitory or near KAIST reduced due to the COVID issue, it became hard to gather people to deliver food together. However, as the delivery fee is quite expensive with a large amount of food for a single person, it became hard to deliver food. So, we are tackling the problem that it became hard to deliver food in KAIST with the corona pandemic. While solving this main problem with the corona pandemic, we are trying to solve some sub-problems like making people feel like they are enjoying their meals with others, even if they eat alone and how to find the trolls out of our system.
 
 
 ## Tasks
@@ -30,6 +30,7 @@
 
 - We made the prototype using InVision. The reason why we decided to use InVision out of the various tools is because it is intuitive and easy to edit for new users. Also, it has a clean UI and allows more than 4 people to cooperate(Figma seems to have a limit of 2 cooperating members). As most of our team members had no experience at using prototype platforms, we also considered how much information we could earn by searching the internet. Marvel had too many related links to the movie company which bothered us and proto.io didn’t have any Korean links that made us prefer InVision. Lastly, one member of our group had some experience using InVision in HCI.
 
+
 - As InVision can easily create a prototype by images, we thought that it would be more pretty and clean to use photoshop to create an image and use the images to make the prototype. To make the images, we first designed how the pages should work and how the application should flow. So we used a feature of InVision, called ‘freehand’, to make a simple drawing of the design we thought to develop. After that, we made images using adobe photoshop to make the images that will be used in the prototype. However, as making images by photoshop could take a lot of effort, we divided the slides into three parts and distributed the work. This made the design quite unbalanced which became a problem of the prototype. Also, it was quite hard to add some functions in an image, so we had to add several images that could show the progress of the application. These were the problems we had using InVision.
 
 
@@ -37,8 +38,14 @@
     Contents
 
 
+- Representative screenshots:  
+    Contents
+
+
 - Instructions  
     InVision shows where you should click by a blue blink when you click anywhere in the background. **So what you can do is just follow the blue blinks and follow the progress.**  Just in case, we will leave a short process to use the prototype. We first start with the log-in page. You can just enter your ID and password or sign up for a new account. If you once sign in, the postings will show up. You can enter into the posted rooms or add a post. If you add a post you will get into a chatting room and if people join, you will be able to share opinions with 
+
+
 
 
 ## Observations
