@@ -70,7 +70,7 @@ We mainly listed the tasks that will appear in our platform. (1) First, we will 
 
 ## Observations
 
-The Participants are 19 university students in 20s (P1, P2, ... , P25). Our team informed these participants that this prototype is about a web application that brings people together to share delivery food within KAIST.
+The Participants are 25 university students in 20s (P1, P2, ... , P25). Our team informed these participants that this prototype is about a web application that brings people together to share delivery food within KAIST.
 
 1. There is a lack of information about the people we eat together, which makes users feel strange and unreliable. (P1, P21, P24) [HIGH]  
     Solution) Ask the questions so that detailed information can be obtained when signing up as a member. (These information will be opened to every member who will be matched with that user)
