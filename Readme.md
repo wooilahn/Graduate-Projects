@@ -50,7 +50,7 @@ In this page, the users in the group can talk to each other.
 In this page, the users can rate and review the people who have ordered and enjoyed the delivery food together.  
 ![reviewing_representative](./images/reviewing_representative.png)    
   
-- We decided to make another design of a prototype which will be in this link. It is a clean design that was made by Powerpoint which is quite easy to balance every slide so that we could concentrate on the design more than any other things. We used both designs to check which design will be better in the survey by the testers.  
+- We decided to make another design of a prototype which will be in this link. It is a clean design that was made by Powerpoint which is quite easy to balance every slide so that we could concentrate on the design more than any other things. We used both designs to check which design will be better in the survey by the testers. [New BFFT Low-Fi Prototype link](https://invis.io/VHZAZ7E45MG "New BFFT Low-Fi Prototype link") 
   
 - Instructions  
     InVision shows where you should click by a blue blink when you click anywhere in the background. **So what you can do is just follow the blue blinks and follow the progress.**  Just in case, we will leave a short process to use the prototype. We first start with the log-in page. You can just enter your ID and password or sign up for a new account. If you once sign in, the postings will show up. You can enter into the posted rooms or add a post. If you add a post you will get into a chatting room and if people join, you will be able to share opinions with others.  
