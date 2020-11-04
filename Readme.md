@@ -25,7 +25,7 @@ We mainly listed the tasks that will appear in our platform. (1) First, we will 
 
 
 ## Prototype
-- Our prototype link is here: [BFFT Low-Fi Prototype link](https://invis.io/DUZ9HR9NGHR, "BFFT Low-Fi Prototype link")
+- Our prototype link is here: [BFFT Low-Fi Prototype link](https://invis.io/DUZ9HR9NGHR "BFFT Low-Fi Prototype link")
 
 
 - We made the prototype using InVision. The reason why we decided to use InVision out of the various tools is because it is intuitive and easy to edit for new users. Also, it has a clean UI and allows more than 4 people to cooperate(Figma seems to have a limit of 2 cooperating members). As most of our team members had no experience at using prototype platforms, we also considered how much information we could earn by searching the internet. Marvel had too many related links to the movie company which bothered us and proto.io didn’t have any Korean links that made us prefer InVision. Lastly, one member of our group had some experience using InVision in HCI.
