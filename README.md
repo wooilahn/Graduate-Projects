@@ -1,5 +1,5 @@
 # CS473_BFFT
-- A web application for gathering people to order delivery food together.
+## A web application for gathering people to order delivery food together.
 ------------------------------------------
 ## Team members  
 - 20150263 KyungGeun Roh  
