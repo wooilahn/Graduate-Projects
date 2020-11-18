@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BFFT Sign-up Page</title>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="#">BFFT</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -41,20 +42,17 @@
     </div>
 </nav>
 <body class="text-center">
-
-<div class="p-5">
+<div class="p-5 m-5">
     <form class="form-signin">
         <h1 class="h3 mb-3 font-weight-normal" style="font-size: 2.5rem">BFFT Sign-up</h1>
-        <label class="sr-only">ID</label>
-        <input type="text" id="input-text" class="form-control" placeholder="ID" required>
+        <label for="inputEmail" class="sr-only">KAIST Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="KAIST Email address" required>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox mb-3">
-
-        </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-size: 1rem" onclick="alert('you have successfully signed up.');">Sign up</button>
         <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-size: 1rem" onclick="history.back()">Go to Back</button>
     </form>
+    <p class="text-primary"><em>Find and gather your meal-mates in BFFT!</em></p>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
