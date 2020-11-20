@@ -10457,3 +10457,21 @@ a.text-dark:hover, a.text-dark:focus {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aligner-item {
+  max-width: 50%;
+}
+
+.Aligner-item--top {
+  align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
