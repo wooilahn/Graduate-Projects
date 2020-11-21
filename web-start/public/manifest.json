@@ -1,6 +1,6 @@
 {
-  "name": "Friendly Chat",
-  "short_name": "Friendly Chat",
+  "name": "BFFT Chat Testing",
+  "short_name": "BFFT Chat Testing",
   "start_url": "/index.html",
   "display": "standalone",
   "orientation": "portrait"

@@ -13,13 +13,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-'use strict';
+ 'use strict';
+
+function checkInfo() {
+  var userName = getUserName();
+  alert(userName);
+}
+
 
 // Signs-in Friendly Chat.
 function signIn() {
   // Sign into Firebase using popup auth & Google as the identity provider.
   var provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithPopup(provider);
+}
+
+// E-mail login #TODO
+function signIn_email() {
+  // Sign into Firebase using popup auth & Google as the identity provider.
+  location.href="login.html";
 }
 
 // Signs-out of Friendly Chat.
@@ -41,7 +53,9 @@ function getProfilePicUrl() {
 
 // Returns the signed-in user's display name.
 function getUserName() {
-  return firebase.auth().currentUser.displayName;
+  return firebase.database().ref("/users/"+firebase.auth().currentUser.uid);
+ // var userId = firebase.auth().currentUser.uid;
+  //return firebase.database().ref('/users/' + userId).child("name");
 }
 
 // Returns true if a user is signed-in.
@@ -66,9 +80,9 @@ function saveMessage(messageText) {
 function loadMessages() {
   // Create the query to load the last 12 messages and listen for new ones.
   var query = firebase.firestore()
-      .collection('messages')
-      .orderBy('timestamp', 'desc')
-      .limit(12);
+  .collection('messages')
+  .orderBy('timestamp', 'desc')
+  .limit(12);
 
   // Start listening to the query.
   query.onSnapshot(function(snapshot) {
@@ -78,7 +92,7 @@ function loadMessages() {
       } else {
         var message = change.doc.data();
         displayMessage(change.doc.id, message.timestamp, message.name,
-            message.text, message.profilePicUrl, message.imageUrl);
+          message.text, message.profilePicUrl, message.imageUrl);
       }
     });
   });
@@ -213,11 +227,11 @@ function resetMaterialTextfield(element) {
 
 // Template for messages.
 var MESSAGE_TEMPLATE =
-    '<div class="message-container">' +
-      '<div class="spacing"><div class="pic"></div></div>' +
-      '<div class="message"></div>' +
-      '<div class="name"></div>' +
-    '</div>';
+'<div class="message-container">' +
+'<div class="spacing"><div class="pic"></div></div>' +
+'<div class="message"></div>' +
+'<div class="name"></div>' +
+'</div>';
 
 // Adds a size to Google Profile pics URLs.
 function addSizeToGoogleProfilePic(url) {
@@ -263,7 +277,7 @@ function createAndInsertMessage(id, timestamp) {
       if (!messageListNodeTime) {
         throw new Error(
           `Child ${messageListNode.id} has no 'timestamp' attribute`
-        );
+          );
       }
 
       if (messageListNodeTime > timestamp) {
@@ -324,8 +338,8 @@ function toggleButton() {
 function checkSetup() {
   if (!window.firebase || !(firebase.app instanceof Function) || !firebase.app().options) {
     window.alert('You have not configured and imported the Firebase SDK. ' +
-        'Make sure you go through the codelab setup instructions and make ' +
-        'sure you are running the codelab using `firebase serve`');
+      'Make sure you go through the codelab setup instructions and make ' +
+      'sure you are running the codelab using `firebase serve`');
   }
 }
 
@@ -345,11 +359,14 @@ var userNameElement = document.getElementById('user-name');
 var signInButtonElement = document.getElementById('sign-in');
 var signOutButtonElement = document.getElementById('sign-out');
 var signInSnackbarElement = document.getElementById('must-signin-snackbar');
+var checkInfoElement = document.getElementById('check-info');
+
+checkInfoElement.addEventListener('click', checkInfo);
 
 // Saves message on form submit.
 messageFormElement.addEventListener('submit', onMessageFormSubmit);
 signOutButtonElement.addEventListener('click', signOut);
-signInButtonElement.addEventListener('click', signIn);
+signInButtonElement.addEventListener('click', signIn_email);
 
 // Toggle for the button.
 messageInputElement.addEventListener('keyup', toggleButton);
