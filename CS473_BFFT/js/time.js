@@ -1,5 +1,6 @@
 var d = new Date();
 
+
 var year = d.getFullYear().toString();
 if(parseInt(year) < 10)
     year = '0' + year;
@@ -23,5 +24,6 @@ if(parseInt(min) < 10)
 var sec = d.getSeconds().toString();
 if(parseInt(sec) < 10)
     sec = '0' + sec;
+
 
 var currentTime = year + month + day + hours + min + sec;
