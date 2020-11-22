@@ -53,9 +53,8 @@ function getProfilePicUrl() {
 
 // Returns the signed-in user's display name.
 function getUserName() {
-  return firebase.database().ref("/users/"+firebase.auth().currentUser.uid);
- // var userId = firebase.auth().currentUser.uid;
-  //return firebase.database().ref('/users/' + userId).child("name");
+  var userId = firebase.auth().currentUser.email;
+  return userId;
 }
 
 // Returns true if a user is signed-in.
