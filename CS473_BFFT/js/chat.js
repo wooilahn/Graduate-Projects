@@ -1,10 +1,12 @@
 var $messages = $('.messages-content'),
-    d, h, m,
-    i = 0;
+d, h, m,
+i = 0;
 
 var myName = "";
+var post_key_value = localStorage.getItem("post_key");
 
 $(window).load(function() {
+    setupRoom(post_key_value);
     userSessionCheck();
 });
 
@@ -33,6 +35,64 @@ $(window).on('keydown', function(e) {
         return false;
     }
 });
+
+function setupRoom(post_key_value) {
+    var path = '/Posts/' + post_key_value;
+    var member_path = path+'/participants';
+    var participant_cnt;
+
+    firebase.database().ref(member_path).once("value", function (snapshot) {
+        participant_cnt = snapshot.numChildren();
+    });
+
+    firebase.database().ref(path).once('value', function(snapshot){ 
+        console.log(path);
+        var data = snapshot.val();
+        console.log(data);
+
+        //alert(data['name']);
+
+        var title_ = document.getElementById("title");
+        var restaurant_ = document.getElementById("restaurant");
+        var participants_ = document.getElementById("member-list");
+        var member_rank_ = document.getElementById("member_rank");
+        /*
+        var where_ = document.getElementById("Where");
+        var with_ = document.getElementById("With");
+        var what_ = document.getElementById("What");
+        var how_long_ = document.getElementById("How_long");
+        var why_ = document.getElementById("Why");
+        var what_you_felt_ = document.getElementById("What_you_felt");
+        */
+        //alert(title_.innerHTML);
+        title_.innerHTML = data['title'];
+        restaurant_.innerHTML = data['restaurant'];
+        participants_.innerHTML = "Members ["+participant_cnt+"/"+data['numpeople']+"]"
+        console.log(member_rank_.innerHTML);
+
+        /*
+        how_long_.value = data['How_long'];
+        what_.value = data['What_you_did'];
+        what_you_felt_.value = data['What_you_felt'];
+        where_.value = data['Where'];
+        why_.value = data['Why'];
+        with_.value = data['With_whom'];
+        importance_ = data['importance'];
+        */
+
+        for(var i=1; i<=participant_cnt; i++){
+            member_rank_.innerHTML += '<li class="list-group-item d-flex justify-content-between align-items-center"><span id="member'+i+'">Member '+i+'</span><span class="badge badge-primary badge-pill">'+i+'</span></li>'
+            var member_i_ = document.getElementById("member"+i);
+            //console.log(data['participants'][['participant']]);
+            var member_i_uid = data['participants']['participant'];
+            //console.log(member_i_uid);
+            firebase.database().ref('/users/'+member_i_uid).once('value', function(snapshot){ 
+                //console.log(snapshot.val());
+                member_i_.innerHTML = snapshot.val().nickname;
+            });
+        }
+    });
+}
 
 //유저가 로그인 했는지 안했는지 확인해주는 함수
 function userSessionCheck() {
