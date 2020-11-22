@@ -43,20 +43,22 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 
-    firebase.database().ref("messages").on("child_removed", function (snapshot) {
+    var post_key_value = localStorage.getItem("post_key");
+
+    firebase.database().ref("Posts/"+post_key_value+"/messages").on("child_removed", function (snapshot) {
         document.getElementById("message-" + snapshot.key).innerHTML = "This message has been deleted";
     });
 
     function deleteMessage(self) {
         var messageId = self.getAttribute("data-id");
-        firebase.database().ref("messages").child(messageId).remove();
+        firebase.database().ref("Posts/"+post_key_value+"/messages").child(messageId).remove();
         var element = document. getElementById("message-"+messageId);
         element.parentNode.parentNode.removeChild(element.parentNode);
     }
 
     function sendMessage() {
         var message = document.getElementById("message").value;
-        firebase.database().ref("messages").push().set({
+        firebase.database().ref("Posts/"+post_key_value+"/messages").push().set({
             "message": message,
             "sender": myName
         });

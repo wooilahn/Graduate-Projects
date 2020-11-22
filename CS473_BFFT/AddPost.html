@@ -226,7 +226,7 @@
                     console.log('error',error);
                 }
             );
-            participantRef.set({participant: loginUserKey});
+            participantRef.push().set({participant: loginUserKey});
             alert("You have successfully posted.");
 
             $('#messagebox').val("");
