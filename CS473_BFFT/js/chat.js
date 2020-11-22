@@ -82,13 +82,37 @@ function setupRoom(post_key_value) {
 
         for(var i=1; i<=participant_cnt; i++){
             member_rank_.innerHTML += '<li class="list-group-item d-flex justify-content-between align-items-center"><span id="member'+i+'">Member '+i+'</span><span class="badge badge-primary badge-pill">'+i+'</span></li>'
-            var member_i_ = document.getElementById("member"+i);
-            //console.log(data['participants'][['participant']]);
-            var member_i_uid = data['participants']['participant'];
-            //console.log(member_i_uid);
+            //console.log(data['participants']);
+            
+
+            /*
+            var member_i_uid = data['participants'].children[0];
+            console.log(member_i_uid);
             firebase.database().ref('/users/'+member_i_uid).once('value', function(snapshot){ 
                 //console.log(snapshot.val());
                 member_i_.innerHTML = snapshot.val().nickname;
+            });
+            */
+        }
+        
+        var mem_arr = [];
+        var member_i_;
+        var i = 0;
+        var cnt = 0;
+        for (var part in data['participants']){
+            i++;
+            member_i_ = document.getElementById("member"+i);
+            mem_arr.push("member"+i);
+            console.log(member_i_.id);
+            firebase.database().ref(member_path+'/'+part).once('value', function(snapshot){ 
+                var member_i_uid = snapshot.val().participant;
+                firebase.database().ref('/users/'+member_i_uid).once('value', function(snapshot){ 
+                    console.log(snapshot.val());
+                    document.getElementById(mem_arr[cnt]).innerHTML = snapshot.val().nickname;
+                    cnt++;
+                        //member_i_.innerHTML = snapshot.val().nickname;
+                        //alert("member_"+i+" : "+member_i_.innerHTML);
+                    });
             });
         }
     });
@@ -131,7 +155,7 @@ function userSessionCheck() {
 function loadMessages() {
     $messages.mCustomScrollbar();
 
-    firebase.database().ref("messages").on("child_added", function (snapshot) {
+    firebase.database().ref("Posts/"+post_key_value+"/messages").on("child_added", function (snapshot) {
         if (snapshot.val().sender == myName) {
             $('<div class="message message-personal"><figure class="avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpdX6tPX96Zk00S47LcCYAdoFK8INeCElPeJrVDrh8phAGqUZP_g" /></figure><div id="message-' + snapshot.key + '">' + snapshot.val().message + '<button class="btn-delete" data-id="' + snapshot.key + '" onclick="deleteMessage(this);">Delete</button></div></div>').appendTo($('.mCSB_container')).addClass('new');
             $('.message-input').val(null);
@@ -141,7 +165,7 @@ function loadMessages() {
         updateScrollbar();
     });
 
-    firebase.database().ref("messages").on("child_removed", function (snapshot) {
+    firebase.database().ref("Posts/"+post_key_value+"/messages").on("child_removed", function (snapshot) {
         var messageId = snapshot.key;
         var element = document. getElementById("message-"+messageId);
         element.parentNode.parentNode.removeChild(element.parentNode);
