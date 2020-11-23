@@ -1,10 +1,10 @@
 # CS473_BFFT
 - A web application for gathering people to order delivery food together.
-- We Support 3 features.
-  - Login & Sign-up
-  - View & Add Posting for finding people who order delivery food together.
-  - Chat with others in one group(posting)
-  - Review others after a meal to find and filter trolls.
+- We Support below features.
+  - Log-in & Sign-up
+  - Viewing & Adding Posting for finding people who order delivery food together.
+  - Chatting with members in one group(posting) for helping interaction between them virtually.
+  - Reviewing other members after a meal for finding and filtering trolls later.
 ------------------------------------------
 ## Team members  
 - 20150263 KyungGeun Roh  
@@ -34,8 +34,3 @@
   - Review page : Shows the members that you met in the post and has a rating-comment system that takes a input of 1~5 for the rating and a input of text as the comment.
   - review.js : Takes the information of the users and gives makes them appear in the rating screen. Supports Review.html.
   - star-rating.js : The package that has the functions related to the star-ratings. Supports Review.html.
-
-
-## Reference
-https://www.w3schools.com/bootstrap4/  
-https://getbootstrap.com/docs/4.5/components/alerts/
