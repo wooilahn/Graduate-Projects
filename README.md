@@ -1,4 +1,12 @@
 # CS473_BFFT
+------------------------------------------
+## Team members  
+- 20150263 KyungGeun Roh  
+- 20150455 Mingyu Yang  
+- 20160662 Seungho Choi  
+- 20203351 Wooil Ahn  
+------------------------------------------
+## Brief introduction and main features
 - A web application for gathering people to order delivery food together and helping interaction with real-time chatting system.
 - We support main system features below.
   - Log-in & Sign-up with ID(email-format), password, nickname (only for sign-up)
@@ -6,12 +14,6 @@
   - Chatting with members in one group(posting) for helping interaction between them virtually.
   - Reviewing other members after a meal for finding and filtering trolls later.
 ------------------------------------------
-## Team members  
-- 20150263 KyungGeun Roh  
-- 20150455 Mingyu Yang  
-- 20160662 Seungho Choi  
-- 20203351 Wooil Ahn  
-
 ## Project description
 - **index.html**
   - Log-in page : The first screen that people will see when they enter the platform. Mainly related to the log-in process which is connected to the firebase database.
