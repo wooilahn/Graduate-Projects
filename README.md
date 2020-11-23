@@ -1,5 +1,10 @@
 # CS473_BFFT
 - A web application for gathering people to order delivery food together.
+- We Support 3 features.
+  - Login & Sign-up
+  - View & Add Posting for finding people who order delivery food together.
+  - Chat with others in one group(posting)
+  - Review others after a meal to find and filter trolls.
 ------------------------------------------
 ## Team members  
 - 20150263 KyungGeun Roh  
