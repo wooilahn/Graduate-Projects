@@ -11,7 +11,7 @@
 - We support main features below.
   - Log-in & Sign-up with ID(email-format), password, nickname (only for sign-up)
   - Viewing & Adding Posting for finding people who order delivery food together.
-  - Chatting with members in one group(posting) for helping interaction between them virtually.
+  - Chatting with members in one group(one posting) for helping interaction between them virtually.
   - Reviewing other members after a meal for finding and filtering trolls later.
 ------------------------------------------
 ## Project description
