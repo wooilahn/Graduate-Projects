@@ -6,9 +6,9 @@
 - 20160662 Seungho Choi  
 - 20203351 Wooil Ahn  
 ------------------------------------------
-## Brief introduction and main features
+## Main features
 - A web application for gathering people to order delivery food together and helping interaction with real-time chatting system.
-- We support main system features below.
+- We support main features below.
   - Log-in & Sign-up with ID(email-format), password, nickname (only for sign-up)
   - Viewing & Adding Posting for finding people who order delivery food together.
   - Chatting with members in one group(posting) for helping interaction between them virtually.
