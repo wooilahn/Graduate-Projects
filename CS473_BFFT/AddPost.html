@@ -33,7 +33,7 @@
             frm.messagebyte.value = totalByte;
 
             if(totalByte > limitByte) {
-                alert( limitByte+" byte is the maximum you can write");
+                alert(limitByte+" byte is the maximum you can write");
                 frm.messagebox.value = message.substring(0,limitByte);
             }
         }
@@ -218,7 +218,7 @@
                 content: comment,
                 createtime: currentTime
             };
-            //위에서 thankRef.push()로 만들어진 key아래 위치에 저장해준다.
+
             postkey.set(obj).then(success => {
                     console.log('success',success);
                 },
@@ -238,12 +238,6 @@
             if (user) {
                 //조회 - 데이터 베이스에 저장된 닉네임을 현재 접속되어 있는 user의 pk key 값을 이용해서 가져오기
                 firebaseDatabase.ref("users/" + user.uid).once('value').then(function (snapshot) {
-
-                    //자바스크립트 dom 선택자를 통해서 네비게이션 메뉴의 엘리먼트 변경해주기
-                    //document.getElementById("loginmenu").textContent = "logout";
-                    //document.getElementById("loginmenu").href = "Logout.html";
-                    //document.getElementById("anotheraction").textContent = "Welcome! " + snapshot.val().nickname;
-                    //document.getElementById("anotheraction").href = "#";
 
                     name = snapshot.val().nickname;   //유저 닉네임은 계속 쓸거기 때문에 전역변수로 할당
                     loginUserKey = snapshot.key;  //로그인한 유저의 key도 계속 쓸 것이기 때문에 전역변수로 할당
