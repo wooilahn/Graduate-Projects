@@ -7,6 +7,7 @@ var post_key_value = localStorage.getItem("post_key");
 
 $(window).load(function() {
     setupRoom(post_key_value);
+    console.log(post_key_value);
     userSessionCheck();
 });
 

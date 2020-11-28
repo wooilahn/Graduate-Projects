@@ -8,10 +8,9 @@ var myName = "";
 var post_key_value = localStorage.getItem("post_key");
 
 $(window).load(function() {
-    userSessionCheck();
     setupRoom(post_key_value);
-
-
+    console.log(post_key_value);
+    userSessionCheck();
 });
 
 
@@ -29,12 +28,6 @@ function setupRoom(post_key_value) {
         var data = snapshot.val();
 
         console.log(data);
-
-        //alert(data['name']);
-
-
-
-
 
         for(var i=1; i<participant_cnt; i++){
             document.getElementById("comment-"+i).textContent = "Comment";
@@ -101,13 +94,12 @@ function userSessionCheck() {
     });
 }
 
-
 $("#but").click(function() {
-
     mem_arr2.forEach( id => set_rate(id)
     )
-    window.location.href = "ViewPost.html";
+    window.close();
 });
+
 function set_rate(id){
     count++;
     input = document.getElementById("input-" + count);

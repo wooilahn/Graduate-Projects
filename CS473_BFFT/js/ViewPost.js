@@ -34,7 +34,8 @@ function go_chatting_room(obj){
 
 				localStorage.setItem("post_key", post_key);
 				window.history.forward(1);
-				location.replace("./ChatRoom.html");
+				var win = window.open("./ChatRoom.html", '_blank');
+				win.focus();
 			}
 			else{
 				if(first_visit){
@@ -44,7 +45,8 @@ function go_chatting_room(obj){
 
 					localStorage.setItem("post_key", post_key);
 					window.history.forward(1);
-					location.replace("./ChatRoom.html");
+					var win = window.open("./ChatRoom.html", '_blank');
+					win.focus();
 				}
 
 			}
