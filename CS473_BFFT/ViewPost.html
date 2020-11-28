@@ -112,7 +112,6 @@
 
     }
     function on_post_list(data) {
-        console.log("on_thanks_list() 함수안으로 들어왔습니다 리스트를 가져오겠습니다")
         var key = data.key;
 
         var Data = data.val();
@@ -122,6 +121,7 @@
         var userkey = Data.userkey;
         var restaurant = Data.restaurant;
         var numpeople = Data.numpeople;
+        var location = Data.location;
         var title = Data.title;
         var path = firebaseDatabase.ref('Posts/'+key+"/participants");
 
@@ -136,21 +136,21 @@
             var partnow = snapshot.numChildren();
             var html =
                 "<div class=\"media\" id='" + userkey + "' onclick=\"show_user_page(this.id)\">" +
-                "<div class=\"media-body\">" +
-                "<div class='card'>" +
-                "<div class='card-body'>" +
-                "<div class='form-group row'>" +
-                "<h3 class='card-title col-8'>" + title +  " (" + times + ")" + "</h3>" +
-                "<h5 class='card-title col-4 text-right'>" + restaurant + "</h5>" +
-                "<h6 hidden class='card-title col-4 text-right'>" + key + "</h6>" +
-                "<h6 hidden class='card-title col-4 text-right'>" + userkey + "</h6>" +
-                "</div>" +
-                "<p class='card-text'>" + comment + "</p>" +
-                "<div class='form-group row'>" +
-                "<div class='form-group col-9'>" +
-                "</div>" +
-                "<h5 class='card-title col-1'>" + partnow + "/" + numpeople + " people" + "</h5>" +
-                "<a class='btn btn-primary col-2' onclick = go_chatting_room(this)>Join</a>" +
+                    "<div class=\"media-body\">" +
+                        "<div class='card'>" +
+                            "<div class='card-body'>" +
+                                "<div class='form-group row'>" +
+                                    "<h3 class='card-title col-8'>" + title + " [" + restaurant + "]" +  "</h3>" +
+                                    "<h5 class='card-title col-8'>" + "(" + times + ")  " + location + "</h5>" +
+                                    "<h6 hidden class='card-title col-4 text-right'>" + key + "</h6>" +
+                                    "<h6 hidden class='card-title col-4 text-right'>" + userkey + "</h6>" +
+                                "</div>" +
+                                "<p class='card-text'>" + comment + "</p>" +
+                            "<div class='form-group row'>" +
+                        "<div class='form-group col-9'>" +
+                    "</div>" +
+                    "<h5 class='card-title col-1'>" + partnow + "/" + numpeople + " people" + "</h5>" +
+                    "<a class='btn btn-primary col-2' onclick = go_chatting_room(this)>Join</a>" +
                 "</div>" +
                 "</div>" +
                 "</div></div></div>";

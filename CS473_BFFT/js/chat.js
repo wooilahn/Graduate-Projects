@@ -48,6 +48,7 @@ function setupRoom(post_key_value) {
 
     firebase.database().ref(path).once('value', function(snapshot){ 
         console.log(path);
+
         var data = snapshot.val();
         console.log(data);
 
@@ -55,8 +56,18 @@ function setupRoom(post_key_value) {
 
         var title_ = document.getElementById("title");
         var restaurant_ = document.getElementById("restaurant");
+        var location_ = document.getElementById("location");
         var participants_ = document.getElementById("member-list");
         var member_rank_ = document.getElementById("member_rank");
+        var recommended_menu_ = document.getElementById("recommended_menus");
+
+
+        var d_time = data['createtime'];
+        var month  = d_time.substring(4,6);
+        var day    = d_time.substring(6,8);
+        var hour   = d_time.substring(8,10);
+        var minute = d_time.substring(10,12);
+        var times =  month + "/" + day + " " + hour + ":" + minute;
         /*
         var where_ = document.getElementById("Where");
         var with_ = document.getElementById("With");
@@ -66,11 +77,12 @@ function setupRoom(post_key_value) {
         var what_you_felt_ = document.getElementById("What_you_felt");
         */
         //alert(title_.innerHTML);
+
         title_.innerHTML = data['title'];
-        restaurant_.innerHTML = data['restaurant'];
+        restaurant_.innerHTML = data['restaurant'] + '(' + times + ')';
+        location_.innerHTML = data['location'];
         participants_.innerHTML = "Members ["+participant_cnt+"/"+data['numpeople']+"]"
         console.log(member_rank_.innerHTML);
-
         /*
         how_long_.value = data['How_long'];
         what_.value = data['What_you_did'];
@@ -82,9 +94,9 @@ function setupRoom(post_key_value) {
         */
 
         for(var i=1; i<=participant_cnt; i++){
-            member_rank_.innerHTML += '<li class="list-group-item d-flex justify-content-between align-items-center"><span id="member'+i+'">Member '+i+'</span><span class="badge badge-primary badge-pill">'+i+'</span></li>'
+            member_rank_.innerHTML += '<li class="list-group-item d-flex justify-content-between align-items-center">' +
+                '<span id="member'+i+'">Member '+i+'</span><span class="badge badge-primary badge-pill">'+i+'</span></li>'
             //console.log(data['participants']);
-            
 
             /*
             var member_i_uid = data['participants'].children[0];
@@ -95,7 +107,7 @@ function setupRoom(post_key_value) {
             });
             */
         }
-        
+
         var mem_arr = [];
         var member_i_;
         var i = 0;
@@ -115,6 +127,57 @@ function setupRoom(post_key_value) {
                         //alert("member_"+i+" : "+member_i_.innerHTML);
                     });
             });
+        }
+
+        var resName = data['restaurant'];
+        var recMenus_cnt = 3;
+        var recMenus_arr  = [];
+        var recMenus_cost = [];
+
+        if(resName === "BHC_chicken"){
+            recMenus_arr.push("bbu-ring-kle");
+            recMenus_cost.push("18,500 won");
+
+            recMenus_arr.push("Mat-cho-king");
+            recMenus_cost.push("18,000 won");
+
+            recMenus_arr.push("Cheese ball (5pics)");
+            recMenus_cost.push("5,000 won");
+        }
+        else if(resName === "BBQ_chicken"){
+            recMenus_arr.push("Gold-Olive Fried");
+            recMenus_cost.push("20,000 won");
+
+            recMenus_arr.push("Jamaica chicken");
+            recMenus_cost.push("17,500 won");
+
+            recMenus_arr.push("Cheese ball (5pics)");
+            recMenus_cost.push("5,000 won");
+        }
+        else if(resName === "Domino_Pizza"){
+            recMenus_arr.push("Potato pizza (L)");
+            recMenus_cost.push("25,900 won");
+
+            recMenus_arr.push("Black tiger shrimp (L)");
+            recMenus_cost.push("34,900 won");
+
+            recMenus_arr.push("Super Supreme (L)");
+            recMenus_cost.push("25,900 won");
+        }
+        else if(resName === "Pizza_Hut"){
+            recMenus_arr.push("Cheese in Hell (L)");
+            recMenus_cost.push("21,630 won");
+
+            recMenus_arr.push("Cheese King (L)");
+            recMenus_cost.push("25,130 won");
+
+            recMenus_arr.push("Super Supreme (L)");
+            recMenus_cost.push("24,430 won");
+        }
+
+        for(let rec_c=0; rec_c<recMenus_cnt; rec_c++){
+            recommended_menu_.innerHTML += '<li class="list-group-item d-flex justify-content-between align-items-center">' +
+                recMenus_arr[rec_c] + '<span class="badge badge-primary badge-pill">'+ recMenus_cost[rec_c] +'</span></li>'
         }
     });
 }

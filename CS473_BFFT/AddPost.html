@@ -116,11 +116,31 @@
                                 <td>
                                     <input type="text" id="post_title" class="form-control" required>
                                 </td>
+                                <td>Location</td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control" id="Location">
+                                            <option>East (E-#)</option>
+                                            <option>West (W-#)</option>
+                                            <option>North (N-#)</option>
+                                            <option>wherever in KAIST</option>
+                                        </select>
+                                    </div>
+                                </td>
                             </tr>
+
                             <tr>
                                 <td>Restaurant</td>
                                 <td>
-                                    <input type="text" id="res_name" class="form-control" required>
+                                    <!-- <input type="text" id="res_name" class="form-control" required> -->
+                                    <div class="form-group">
+                                        <select class="form-control" id="res_name">
+                                            <option>BHC_chicken</option>
+                                            <option>BBQ_chicken</option>
+                                            <option>Domino_Pizza</option>
+                                            <option>Pizza_Hut</option>
+                                        </select>
+                                    </div>
                                 </td>
                                 <td>People</td>
                                 <td>
@@ -130,12 +150,17 @@
                             <tr>
                                 <td>Content</td>
                                 <td>
-                                    <textarea style="line-height:20px;" class="form-control" id="messagebox" placeholder="Write what you want!!" rows="10" cols="90" onFocus="clearMessage(this.form);" onKeyUp="checkByte(this.form);" required></textarea>
+                                    <textarea style="line-height:20px;" class="form-control" id="messagebox" placeholder="Write whatever you want!" rows="10" cols="90" onFocus="clearMessage(this.form);" onKeyUp="checkByte(this.form);" required></textarea>
                                 </td>
                                 <td>
-                                    <input type="text" name="messagebyte" value="0" size="1" maxlength="2" readonly>
-                                    / 300 (150 for Korean)
+                                    <input type="text" name="messagebyte" value="0" size="1" maxlength="2" readonly style="width:100%;">
                                 </td>
+                                <td>
+                                    <p> /300 (150 for Korean)</p>
+                                </td>
+                            </tr>
+                            <tr>
+
                             </tr>
                             </tbody>
                         </table>
@@ -182,7 +207,6 @@
     //세션 체크 함수
     userSessionCheck();
 
-
     //유저가 로그인 했는지 안했는지 확인해주는 함수
     function userSessionCheck() {
 
@@ -201,14 +225,17 @@
         function savePost() {
             //thanks 라는 테이블을 만들고 하위 데이터에 유저 아이디를 넣어준다. 그곳에 push로 가상의 키를 넣고, 객체를 넣어준다.!!!!
             var postRef = firebaseDatabase.ref("Posts");
+
             // 해당 객체의 key 값이 자동으로 생성된다.
-            var postkey = postRef.push(); // 해당 객체의 key 값이 자동으로 생성된다.
+            var postkey = postRef.push();
             var title = $('#post_title').val();
             var restaurant = $('#res_name').val();
             var numpeople = $('#num_people').val();
+            var location = $('#Location').val();
             var keyval = postkey.key;
             var participantRef = firebaseDatabase.ref("Posts/"+keyval+"/participants");
-            //로그인한 유저의 pk값,이름,내용,시간 데이터
+
+            //Login 한 User의 Data
             var obj = {
                 userkey: loginUserKey,
                 name: name,
@@ -216,7 +243,8 @@
                 restaurant: restaurant,
                 numpeople: numpeople,
                 content: comment,
-                createtime: currentTime
+                createtime: currentTime,
+                location: location,
             };
 
             postkey.set(obj).then(success => {
@@ -226,15 +254,14 @@
                     console.log('error',error);
                 }
             );
+
             participantRef.push().set({participant: loginUserKey});
             alert("You have successfully posted.");
-
             $('#messagebox').val("");
         }
 
         //로그인이 되어있으면 - 유저가 있으면, user를 인자값으로 넘겨준다.
         firebaseEmailAuth.onAuthStateChanged(function (user) {
-
             if (user) {
                 //조회 - 데이터 베이스에 저장된 닉네임을 현재 접속되어 있는 user의 pk key 값을 이용해서 가져오기
                 firebaseDatabase.ref("users/" + user.uid).once('value').then(function (snapshot) {
