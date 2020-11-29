@@ -95,7 +95,7 @@ function setupRoom(post_key_value) {
 
         for(var i=1; i<=participant_cnt; i++){
             member_rank_.innerHTML += '<li class="list-group-item d-flex justify-content-between align-items-center">' +
-            '<span id="member'+i+'">Member '+i+'</span><span class="badge badge-primary badge-pill">'+i+'</span></li>'
+                '<span id="member'+i+'">Member '+i+'</span><span class="badge badge-primary badge-pill" id=membadge'+i+'>'+i+'</span></li>'
             //console.log(data['participants']);
 
             /*
@@ -112,20 +112,32 @@ function setupRoom(post_key_value) {
         var member_i_;
         var i = 0;
         var cnt = 0;
+
+        var mem_badge = [];
+        var membadge_i_;
+
         for (var part in data['participants']){
             i++;
             member_i_ = document.getElementById("member"+i);
+            membadge_i_ = document.getElementById("membadge"+i);
+
             mem_arr.push("member"+i);
-            console.log(member_i_.id);
-            firebase.database().ref(member_path+'/'+part).once('value', function(snapshot){ 
+            mem_badge.push("membadge"+i);
+
+            //console.log(member_i_.id);
+
+            firebase.database().ref(member_path+'/'+part).once('value', function(snapshot){
                 var member_i_uid = snapshot.val().participant;
-                firebase.database().ref('/users/'+member_i_uid).once('value', function(snapshot){ 
+                firebase.database().ref('/users/'+member_i_uid).once('value', function(snapshot){
                     console.log(snapshot.val());
                     document.getElementById(mem_arr[cnt]).innerHTML = snapshot.val().nickname;
+                    console.log(mem_badge[cnt]);
+                    console.log(snapshot.val().rate.toString());
+                    document.getElementById(mem_badge[cnt]).innerHTML = snapshot.val().rate.toString();
                     cnt++;
-                        //member_i_.innerHTML = snapshot.val().nickname;
-                        //alert("member_"+i+" : "+member_i_.innerHTML);
-                    });
+                    //member_i_.innerHTML = snapshot.val().nickname;
+                    //alert("member_"+i+" : "+member_i_.innerHTML);
+                });
             });
         }
 
