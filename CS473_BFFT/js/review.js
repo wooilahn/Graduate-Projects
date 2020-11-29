@@ -1,24 +1,24 @@
 var $messages = $('.messages-content'),
-    d, h, m,
-    i = 0;
+d, h, m,
+i = 0;
 var count = 0;
 var junk = -1;
 var mem_arr2 = [];
 var myName = "";
 var myEmail = "";
-var post_key_value = localStorage.getItem("post_key");
+var exit_key_value = localStorage.getItem("exit_key");
 var n = 0;
 var total = 0;
 
 $(window).load(function() {
-    setupRoom(post_key_value);
-    console.log(post_key_value);
+    setupRoom(exit_key_value);
+    console.log(exit_key_value);
     userSessionCheck();
 });
 
 
-function setupRoom(post_key_value) {
-    var path = '/Posts/' + post_key_value;
+function setupRoom(exit_key_value) {
+    var path = '/Posts/' + exit_key_value;
     var member_path = path+'/participants';
     var participant_cnt;
 
@@ -113,7 +113,7 @@ function userSessionCheck() {
 
 $("#but").click(function() {
     mem_arr2.forEach( id => set_rate(id)
-    )
+        )
     window.close();
 });
 
@@ -144,3 +144,24 @@ function set_rate(id){
     }
 }
 
+function exit_room(){
+    alert('Thank you for leaving reviews!');    
+    var path = '/Posts/' + exit_key_value+'/participants';
+
+    firebase.database().ref(path).once("value", function (snapshot) {
+
+        for (var part in snapshot.val()){
+            console.log(part);
+
+            firebase.database().ref(path+'/'+part).once('value', function(snapshot){ 
+                var member_uid = snapshot.val().participant;
+                if(member_uid==loginUserKey){
+                    console.log("exited "+part);
+                    var updates = {};
+                    updates[path+'/'+part+'/status'] = "exited";
+                    return firebase.database().ref().update(updates);
+                }
+            });
+        }
+    });
+}

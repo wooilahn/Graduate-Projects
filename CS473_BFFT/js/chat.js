@@ -62,7 +62,7 @@ function setupRoom(post_key_value) {
         var recommended_menu_ = document.getElementById("recommended_menus");
 
 
-        var d_time = data['createtime'];
+        var d_time = String(-1*data['createtime']);
         var month  = d_time.substring(4,6);
         var day    = d_time.substring(6,8);
         var hour   = d_time.substring(8,10);
@@ -95,7 +95,7 @@ function setupRoom(post_key_value) {
 
         for(var i=1; i<=participant_cnt; i++){
             member_rank_.innerHTML += '<li class="list-group-item d-flex justify-content-between align-items-center">' +
-                '<span id="member'+i+'">Member '+i+'</span><span class="badge badge-primary badge-pill">'+i+'</span></li>'
+            '<span id="member'+i+'">Member '+i+'</span><span class="badge badge-primary badge-pill">'+i+'</span></li>'
             //console.log(data['participants']);
 
             /*
@@ -177,7 +177,7 @@ function setupRoom(post_key_value) {
 
         for(let rec_c=0; rec_c<recMenus_cnt; rec_c++){
             recommended_menu_.innerHTML += '<li class="list-group-item d-flex justify-content-between align-items-center">' +
-                recMenus_arr[rec_c] + '<span class="badge badge-primary badge-pill">'+ recMenus_cost[rec_c] +'</span></li>'
+            recMenus_arr[rec_c] + '<span class="badge badge-primary badge-pill">'+ recMenus_cost[rec_c] +'</span></li>'
         }
     });
 }
@@ -243,4 +243,10 @@ function doNotReload(){
         event.cancelBubble = true;
         event.returnValue = false;
     } 
+}
+
+function go_review(){
+    exit_key = post_key_value;
+    localStorage.setItem("exit_key", exit_key);
+    location.replace("./Review.html");
 }
