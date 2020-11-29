@@ -17,8 +17,13 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
         </ul>
-        <form action="SearchPostbyname.html" method="get">
-            <input type="text" name="keywordname" style="width: 150px;"/>&nbsp;&nbsp;<input class="btn btn-outline-success" style="width: 120px; height: 35px;align-content: center" type="submit" value="Search by name" onclick="location.href='SearchPostbyname.html'" />
+        <form action="SearchPostbyname.html" method="get" class="form-inline">
+            <select class="form-control" name="keywordname">
+                <option>BHC_chicken</option>
+                <option>BBQ_chicken</option>
+                <option>Domino_Pizza</option>
+                <option>Pizza_Hut</option>
+            </select>&nbsp;&nbsp;<input class="btn btn-outline-success" style="width: 120px; height: 35px;align-content: center" type="submit" value="Search by name" onclick="location.href='SearchPostbyname.html'" />
         </form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <form action="SearchPostbycontent.html" method="get">
             <input type="text" name="keyword" style="width: 300px;"/>&nbsp;&nbsp;<input class="btn btn-outline-success" style="width: 150px; height: 35px;align-content: center" type="submit" value="Search by content" onclick="location.href='SearchPostbycontent.html'" />
