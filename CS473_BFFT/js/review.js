@@ -5,7 +5,10 @@ var count = 0;
 var junk = -1;
 var mem_arr2 = [];
 var myName = "";
+var myEmail = "";
 var post_key_value = localStorage.getItem("post_key");
+var n = 0;
+var total = 0;
 
 $(window).load(function() {
     setupRoom(post_key_value);
@@ -50,7 +53,7 @@ function setupRoom(post_key_value) {
                     var member_i_uid = snapshot.val().participant;
                     mam_arr2 = mem_arr2.push(member_i_uid)
 
-                    firebase.database().ref('/users/'+member_i_uid).once('value', function(snapshot){
+                    firebase.database().ref('/users/'+member_i_uid).on('value', function(snapshot){
                         console.log(snapshot.val());
                         document.getElementById(mem_arr[cnt]).innerHTML = snapshot.val().nickname;
                         cnt++;
@@ -62,6 +65,20 @@ function setupRoom(post_key_value) {
                 }
             });
 
+        }
+        var rest = 5-participant_cnt;
+        for (k = 0; k< rest+1; k++) {
+            var num = k+ participant_cnt;
+            var group = "group" + num;
+            if (num == 1){
+                alert("'Your the only person in the group. You can leave reviews for the BFFT service'")
+                document.getElementById("title1").innerText = "How was the services?";
+                document.getElementById("comment-help").innerText = "Your comments and rating will help our service!";
+            }
+            else{
+                document.getElementById(group).hidden = true;
+                //document.getElementById(group).style.visibility = 'hidden';
+            }
         }
     });
 }
@@ -103,9 +120,27 @@ $("#but").click(function() {
 function set_rate(id){
     count++;
     input = document.getElementById("input-" + count);
-    var ref = firebase.database().ref("users/" + id);
-    ref.push().set({
-        "rate": input.value
-    });
+    if (input.value){
+        var ref = firebase.database().ref("users/" + id);
+        ref.on('value',function (snapshot) {
+            myName = snapshot.val().nickname;
+            myEmail = snapshot.val().email;
+            if(snapshot.val().rate_n != undefined){
+                n = Number(snapshot.val().rate_n);
+            }
+            if(snapshot.val().rate_total != undefined){
+                total = snapshot.val().rate_total;
+            }
+        })
+        n = n+1;
+        total =Number(total) + Number(input.value);
+        ref.set({
+            nickname: myName,
+            email: myEmail,
+            rate_total: total,
+            rate: total/n,
+            rate_n: n
+        });
+    }
 }
 
