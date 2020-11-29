@@ -7,6 +7,12 @@
     <link rel = "stylesheet" href="css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/time.js"></script>
+    <script type="text/javascript">
+        function submit(){
+            var confirm = 1;
+            console.log("confirm = 1")
+        }
+    </script>
     <script language="javascript">
         var clearChk=true;
         var limitByte = 300; //Mazimum bytes
@@ -114,7 +120,7 @@
                             <tr style="line-height:32px;">
                                 <td>Title</td>
                                 <td>
-                                    <input type="text" id="post_title" class="form-control" required>
+                                    <input type="text" id="post_title" class="form-control" required/>
                                 </td>
                                 <td>Location</td>
                                 <td>
@@ -144,7 +150,7 @@
                                 </td>
                                 <td>People</td>
                                 <td>
-                                    <input type="number" id="num_people" placeholder="number input" class="form-control" maxlength="2" min="1" oninput="numberMaxLength(this);" required>
+                                    <input type="number" id="num_people" placeholder="number input" value="4" class="form-control" maxlength="2" min="1" oninput="numberMaxLength(this);" required/>
                                 </td>
                             </tr>
                             <tr>
@@ -171,7 +177,7 @@
         <div class="Aligner" style="width:100%;">
             <div class="Aligner-item text-center mt-3 btn-group-lg" style="width:50%;margin: 0 auto;">
                 <button type="reset" class="btn btn-warning btn-block btn-sm" style="marginmargin-bottom:1%">Reset</button>
-                <button type="button" class="btn btn-primary btn-block write">Post</button>
+                <button type="submit" class="btn btn-primary btn-block write"">Post</button>
             </div>
         </div>
         &nbsp
@@ -213,12 +219,14 @@
         $(document).ready(function () {
 
             //메인화면 감사일기 쓰기버튼 눌렀을 때
-            $(document).on('submit', '.write', function () {
+            $(document).on('click', '.write', function () {
 
-                //내가 쓴글 가져오기 - jquery방식으로 가져왔다.
-                comment = $('#messagebox').val();
-                savePost();
-                window.location.href = "ViewPost.html";
+
+                    //내가 쓴글 가져오기 - jquery방식으로 가져왔다.
+                    comment = $('#messagebox').val();
+                    savePost();
+                    window.location.href = "ViewPost.html";
+
             });
         });
 
