@@ -5,7 +5,7 @@
     <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>BFFT Review Page</title>
+    <title>BFFT Login-Page</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
     <link href="css/star-rating.css" media="all" rel="stylesheet" type="text/css">
@@ -67,16 +67,16 @@
         <div class="container">
             <body>
             <ul class="list-group">
-                <li class="list-group-item flex-column justify-content-between align-items-md-start">
+                <li class="list-group-item flex-column justify-content-between align-items-md-start" id="group1">
                     <h2>&nbsp;&nbsp;&nbsp;<label for="input-1" class="control-label" id = "title1">Empty slot</label></h2>
-                    <input id="input-1" name="input-0" class="rating rating-loading" data-min="0" data-max="5" data-step="1" data-show-clear="false" data-size="xl">
+                    <input id="input-1" name="input-1" class="rating rating-loading" data-min="0" data-max="5" data-step="1" data-show-clear="false" data-size="xl">
                     <div class="form-group">
                         <h3>&nbsp;&nbsp;<label for="input-comment" id="comment-1">Empty slot</label></h3>
                         <input type="comment" class="form-control" id="input-comment"aria-describedby="comment-help" placeholder="type anything if you want" size="lg">
                         <small id="comment-help" class="form-text text-muted">The comments will help the rating and not be revealed.</small>
                     </div>
                 </li>
-                <li class="list-group-item flex-column justify-content-between align-items-center">
+                <li class="list-group-item flex-column justify-content-between align-items-center" id="group2">
                     <h2>&nbsp;&nbsp;&nbsp;<label for="input-2" class="control-label" id = "title2">Empty slot</label></h2>
                     <input id="input-2" name="input-2" class="rating rating-loading" data-min="0" data-max="5" data-step="1" data-show-clear="false" data-size="xl">
                     <div class="form-group">
@@ -85,7 +85,7 @@
                     </div>
                 </li>
 
-                <li class="list-group-item flex-column justify-content-between align-items-center">
+                <li class="list-group-item flex-column justify-content-between align-items-center" id="group3">
                     <h2>&nbsp;&nbsp;&nbsp;<label for="input-3" class="control-label" id="title3">Empty slot</label></h2>
                     <input id="input-3" name="input-3" class="rating rating-loading" data-min="0" data-max="5" data-step="1" data-show-clear="false" data-size="xl">
                     <div class="form-group">
@@ -93,9 +93,24 @@
                         <input type="comment" class="form-control" id="input-comment3" placeholder="type anything if you want" size="lg">
                     </div>
                 </li>
+                <li class="list-group-item flex-column justify-content-between align-items-center" id="group4">
+                    <h2>&nbsp;&nbsp;&nbsp;<label for="input-4" class="control-label" id="title4">Empty slot</label></h2>
+                    <input id="input-4" name="input-4" class="rating rating-loading" data-min="0" data-max="5" data-step="1" data-show-clear="false" data-size="xl">
+                    <div class="form-group">
+                        <h3>&nbsp;&nbsp;<label for="input-comment4" id = "comment-4">Empty slot</label></h3>
+                        <input type="comment" class="form-control" id="input-comment4" placeholder="type anything if you want" size="lg">
+                    </div>
+                </li>
+                <li class="list-group-item flex-column justify-content-between align-items-center" id="group5">
+                    <h2>&nbsp;&nbsp;&nbsp;<label for="input-5" class="control-label" id="title5">Empty slot</label></h2>
+                    <input id="input-5" name="input-5" class="rating rating-loading" data-min="0" data-max="5" data-step="1" data-show-clear="false" data-size="xl">
+                    <div class="form-group">
+                        <h3>&nbsp;&nbsp;<label for="input-comment5" id = "comment-5">Empty slot</label></h3>
+                        <input type="comment" class="form-control" id="input-comment5" placeholder="type anything if you want" size="lg">
+                    </div>
+                </li>
             </ul>
-
-            <button type="button" class="btn btn-primary btn-lg btn-block " id="but" onclick="exit_room()" >Add reviews & Exit room</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block " id="but" onclick="alert('Thank you for leaving reviews!');" >Add reviews</button>
             </body>
         </div>
     </div>
