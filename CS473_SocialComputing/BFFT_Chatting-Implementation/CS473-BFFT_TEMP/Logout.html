@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BFFT Logout</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="ViewPost.html">BFFT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="ViewPost.html">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" id="loginmenu" href="#">Action</a>
+                    <a class="dropdown-item" id = "joinmenu" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container">
+    <h1>You have successfully logged out! Thank you:)</h1>
+
+</div>
+
+
+<!--스크립트 부분. 자신의 스크립트 코드로 변경하세요! -->
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+    var firebaseEmailAuth; //파이어베이스 email 인증 모듈 전역변수
+
+    //파이어 베이스 초기화 코드
+    var config = {
+        apiKey: "AIzaSyAAo0OHZ_XoaVWMOxCYnlcUFNfrSog6y9E",
+        authDomain: "cs473-bfft-41b34.firebaseapp.com",
+        databaseURL: "https://cs473-bfft-41b34.firebaseio.com",
+        projectId: "cs473-bfft-41b34",
+        storageBucket: "cs473-bfft-41b34.appspot.com",
+        messagingSenderId: "206308782896",
+        appId: "1:206308782896:web:cc7d9e705aa01704bf0ef5",
+        measurementId: "G-5M46FYM7KN"
+    };
+    //파이어베이스 초기화
+    firebase.initializeApp(config);
+    //인증모듈 객체 가져오기
+    firebaseEmailAuth = firebase.auth();
+
+    firebase.auth().signOut().then(function() {
+        alert("successfully logged out!!");
+        window.location.href = "index.html"
+    }).catch(function(error) {
+        alert("log out failure");
+    });
+
+
+</script>
+</body>
+</html>
